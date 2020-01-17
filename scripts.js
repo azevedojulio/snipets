@@ -11,3 +11,14 @@ $("document").ready(function($){
         }
     });
 });
+
+/* icone de abrir e fechar menu */
+
+$('.menu-back-to-parent-icon').click(function() {
+		$(this).parent().parent().parent().parent().toggle('slide');
+	});
+	
+	$('.dropdown .nav-link').click(function() {
+		$(this).next().toggle('slide');
+	});
+});
